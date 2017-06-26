@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gautamnarayanan.myapp9.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/Glayout"
+        android:layout_width="700dp"
+        android:layout_height="700dp"
+        android:background="#719FE4"
+        tools:layout_editor_absoluteX="-9dp"
+        tools:layout_editor_absoluteY="2dp">
+
+        <ListView
+            android:id="@+id/Glist"
+            android:layout_width="250dp"
+            android:layout_height="300dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            tools:layout_editor_absoluteX="326dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <ImageView
+            android:id="@+id/Gimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:adjustViewBounds="true"
+            android:maxHeight="100dp"
+            android:maxWidth="100dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <EditText
+            android:id="@+id/Gtext"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/Gimage"
+            android:layout_marginLeft="36dp"
+            android:layout_marginStart="36dp"
+            android:layout_toEndOf="@+id/Gimage"
+            android:layout_toRightOf="@+id/Gimage"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <ImageButton
+            android:id="@+id/Gbutton3"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignLeft="@+id/Gtext"
+            android:layout_alignStart="@+id/Gtext"
+            android:layout_below="@+id/Gtext"
+            android:layout_marginTop="22dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/camera" />
+
+        <ImageButton
+            android:id="@+id/Gbutton"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignTop="@+id/Gbutton3"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_toEndOf="@+id/Gbutton3"
+            android:layout_toRightOf="@+id/Gbutton3"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/gallery" />
+
+        <ImageButton
+            android:id="@+id/Gbutton2"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/Gbutton3"
+            android:layout_alignStart="@+id/Gbutton3"
+            android:layout_below="@+id/Gbutton3"
+            android:layout_marginLeft="60dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="29dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/add" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
